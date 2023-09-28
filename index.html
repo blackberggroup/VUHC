@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>VA Website Template</title>
+  <title>VHA-Uber Health Connect Initiative</title>
 
   <meta property="og:title" content="((TITLE))">
   <meta property="og:url" content="((URL))">
@@ -29,7 +29,9 @@
       {% include "header.html" %}
       
         <main>
-            <div style="height: 200px;"></div>
+          {% include "home/page-title.html" %}
+          {% include "home/our-mission.html" %}
+          {% include "home/announcements-events.html" %}
         </main>
 
         {% include "footer.html" %}
@@ -39,6 +41,7 @@
 
     <script src="assets/uswds/js/uswds.min.js"></script>
     <script src="assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="assets/js/vendors/parallax-scroll/jquery.parallax-scroll.js"></script>
     <script src="assets/js/functions.js"></script>
 
   </body>

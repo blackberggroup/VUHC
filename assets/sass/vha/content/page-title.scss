@@ -1,6 +1,7 @@
 @use "uswds-core" as *;
 
 .page-title {
+    background: radial-gradient(53.96% 157.08% at 44.17% -57.08%, #73C2ED 21.46%, #3559A5 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 
     @include at-media(mobile) {
     

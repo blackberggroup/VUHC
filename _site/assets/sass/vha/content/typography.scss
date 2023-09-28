@@ -5,6 +5,10 @@ p {
     line-height: 1.6;
 }
 
+.intro {
+    @include font-size(22px);
+}
+
 h1, .h1 {
     @include font-size(40px);
 }
@@ -19,9 +23,4 @@ h3, .h3 {
 
 h4, .h4 {
     @include font-size(18px);
-}
-
-.heading-subtitle {
-    font-weight: bold;
-    color: var(--red-8);
 }
