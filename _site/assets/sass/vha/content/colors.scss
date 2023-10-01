@@ -1,0 +1,11 @@
+.primary-background {
+
+    &--light {
+        background-color: #EBEEF6;
+    }
+
+    &--gradient {
+        background: linear-gradient(180deg, #3559A5 0%, #73C2ED 100%);
+    }
+    
+}

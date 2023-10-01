@@ -54,6 +54,35 @@ $('.scroll').on('click',function(e) {
 	});
 });
 
+$('#publications-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+	dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2
+        },
+        1400:{
+            items:3
+        }
+    }
+});
+
+var owl = $('.owl-carousel');
+owl.owlCarousel();
+$('.vhaNextBtn').click(function() {
+    owl.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('.vhaPrevBtn').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owl.trigger('prev.owl.carousel');
+})
 
 $(function() {
 	$('.lazy').Lazy();

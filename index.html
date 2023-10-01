@@ -6,13 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>VA Website Template</title>
+  <title>VHA-Uber Health Connect Initiative</title>
 
-  <meta property="og:title" content="((TITLE))">
-  <meta property="og:url" content="((URL))">
-  <meta property="og:description" content="((DESCRIPTION))">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="((OG:IMAGE URL))">
+  <meta name="robots" content="noindex,nofollow">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -29,7 +25,16 @@
       {% include "header.html" %}
       
         <main>
-            <div style="height: 200px;"></div>
+          {% include "home/page-title.html" %}
+          {% include "home/our-mission.html" %}
+          {% include "home/announcements-events.html" %}
+          {% include "home/initiative-sites.html" %}
+          {% include "home/program-eligibility.html" %}
+          {% include "home/program-requirements.html" %}
+          {% include "home/program-benefits.html" %}
+          {% include "home/publications.html" %}
+          {% include "home/multimedia.html" %}
+          {% include "home/our-team.html" %}
         </main>
 
         {% include "footer.html" %}
@@ -39,6 +44,8 @@
 
     <script src="assets/uswds/js/uswds.min.js"></script>
     <script src="assets/js/vendors/lazy/jquery.lazy.min.js"></script>
+    <script src="assets/js/vendors/owl-carousel/owl.carousel.min.js"></script> 
+    <script src="assets/js/vendors/parallax-scroll/jquery.parallax-scroll.js"></script>
     <script src="assets/js/functions.js"></script>
 
   </body>
